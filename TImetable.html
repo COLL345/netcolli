@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMETABLE</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+         text-transform: capitalize;
+        
+        }
+       body{
+        /* background-image :url (pexels-chan-walrus-958545.jpg ) ;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgb(50, 47, 47);
+   
+
+       
+       }
+       h1,h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: italic;
+        font-family: fantasy;
+        color: rgb(70, 186, 186);
+       
+       }
+       li{
+      
+        list-style: none;
+       
+       }
+       .contain p{
+       font-size: 20px;
+        color: black;
+        margin-bottom: 35px;
+        font-weight: bold;
+        
+       }
+      
+       #list{
+           grid-gap: 1px; 
+           display: grid;         
+           grid-template-columns: 1fr 1fr ;
+         
+        }
+        
+        .main{
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+            /* background-image: url(joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+            background-color: rgb(127, 10, 31); 
+        }
+        .contain{
+          
+            margin-right: 20px;
+            padding: 0;
+            
+        }
+       
+        .p{
+            margin-top: 20px;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            width: 390px;
+
+        }
+        .contain li{
+            padding-bottom: 5px;
+            color:rgb(233, 230, 230);
+        }
+        .cost{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .cost p{
+            
+            padding-bottom: 5px;
+            font-size: 15px;
+           color: rgb(167, 199, 11);
+             font-weight: bold;
+        }
+        .cost h2{
+           margin-bottom: 35px;
+           font-size: 15px;
+        }
+       .others{
+       display: flex;
+       justify-content: center;
+       }
+       .pics{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+      
+       }
+       .pics img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+       }
+       .hexagon{
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        height: 120px;
+        background-color: #927608;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+        .hexagon p{
+            display: flex;
+            align-items: center;
+            font-size: 50px;
+            color: maroon;
+        }
+       /* Existing styles */
+
+/* Add media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 100%; /* Adjust width to fit smaller screens */
+    }
+    .contain p{
+       font-size: 15px;
+       
+        margin-bottom: 12px;
+      
+        
+       }
+       #list{
+           grid-gap: 0; 
+           display: grid;         
+           grid-template-columns: 1fr 1fr ;
+           margin-left: 10px;
+         
+        }
+      
+        .contain{
+          
+            margin-right: 30px;
+         
+            
+        }
+       
+        .p{
+            margin-top: 15px;
+            width: 200px;
+            background-color: #927608;
+            
+
+        }
+        .contain li{
+            padding-bottom: 5px;
+            font-size: 10px;
+           
+        }
+       
+        .cost p{
+            
+            padding-bottom: 5px;
+            font-size: 10px;
+         
+        }
+        .cost h2{
+           margin-bottom: 12px;
+           font-size: 15px;
+        }
+      
+       .pics{
+      
+        margin-top: 20px;
+        width: 100%;
+        height: 100px;
+      
+       }
+       .pics img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+       }
+       .hexagon{
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        height: 120px;
+        background-color: #927608;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+        .hexagon p{
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            color: maroon;
+        }
+  
+}
+
+
+
+    </style>
+     <script>
+       
+    
+    </script>
+</head>
+<div>
+<body>
+    <div class="main">
+        
+        <div class="head">
+            <h1>Family food menu</h1>
+          
+        </div>
+        <div class="pics">
+         <div class="pic1">
+            <img src="pilau.jpg" alt="">
+         </div>
+         <div class="pic2">
+            <img src="ke-vin-szQFiGZH8wU-unsplash.jpg" alt="">
+         </div>
+         <div class="pic3">
+            <img src="diego-ramirez-OC3lZI9P6kU-unsplash.jpg" alt="">
+         </div>
+         <div class="pic4">
+            <img src="FF_9UYYWQAsiUfZ.jpg" alt="">
+         </div>
+
+        </div>
+        <div class="hexagon"><p>Kenyan dishes</p></div>
+        <div id="list">
+            <div class="p">
+                <div class="contain" >
+               <p>ugali</p>
+                 
+                <ul>
+                    <li>ugali + nyama</li>
+                    <li>ugali + kiyeneji</li>
+                    <li>ugali + egg/milk</li>
+                    <li>ugali + mboga + nyama</li>
+                    <li>ugali + kuku + mboga </li>
+                    <li>ugali + fish + mboga </li>
+                    <li>ugali + liver+mboga</li>
+                    <li>ugali + cabbage + nyama</li>
+                </ul>
+                 
+                 </div>
+                
+                     <div class="cost">
+                    <h2>cost</h2>
+                    <p> ksh 320</p>
+                    <p> ksh 260</p>
+                    <p> ksh 216</p>
+                    <p> ksh 830</p>
+                    <p> ksh 580</p>
+                    <p> ksh 380</p>
+                    <p> ksh 365</p>
+                    <p> ksh 365</p>
+                    
+                </div>
+                </div>
+            
+                
+                
+               
+               <div class="p">
+    
+                    <div  class="contain">
+                     <p>Rice</p>
+                    
+                    <ul>
+                        <li>rice + nyama + peas + viazi</li>
+                        <li>rice + beans </li>
+                        <li>rice + ndengu</li>
+                        <li>rice + liver </li>
+                        <li>rice + eggs </li>
+                        <li>rice + cabbage + nyama </li>
+                        <li>rice + peas + viazi</li>
+                        <li>rice + kuku </li>
+                        <li>rice + fish</li>
+                       
+                    </ul>
+                </div>
+                <div class="cost">
+                    <h2>cost</h2>
+                    <p> ksh 420</p>
+                    <p> ksh 190</p>
+                    <p> ksh 190</p>
+                    <p> ksh 340</p>
+                    <p> ksh 240</p>
+                    <p> ksh 385</p>
+                    <p> ksh 320</p>
+                    <p> ksh 780</p>
+                    <p> ksh 540</p>
+                    
+                </div>
+            </div>
+            <div class="p">
+            
+                <div class="contain">
+                <p>Spargetti</p>
+
+                            <ul>
+                            <li>Spargetti + nyama + peas</li>    
+                            <li>Spargetti + beans  </li>
+                            <li>Spargetti + peas + viazi  </li>
+                        </ul>
+                </div>
+                <div class="cost">
+                    <h2>cost</h2>
+                    <p> ksh 400</p>
+                    <p> ksh 170</p>
+                    <p> ksh 200</p>   
+                </div>
+            </div>
+            
+            
+            <div class="p">
+                
+                <div class="contain">
+                    <p>Chapati</p>
+                    
+                    <ul>
+                        <li>Chapati+ beans</li>
+                        <li>Chapati+ nyama + viazi +  peas</li>
+                        <li>Chapati+ ndengu</li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="cost">
+                    <h2>cost</h2>
+                  
+                    <p> ksh 210</p>
+                    <p> ksh 440</p>
+                    <p> ksh 210</p>
+                    
+                </div>
+               
+            </div>
+            </div>
+            
+            
+            
+            <div class="others">
+
+                <div class="p">
+                    
+                <div class="contain">
+                <p>others</p>
+            
+                    <ul>
+                    <li>pilau </li>
+                    <li>githeri</li>
+                    <li>marshedpotatoes+meat</li>
+                
+                  
+                
+            
+                </ul>
+                </div>
+                <div class="cost">
+                    <h2>cost</h2>
+                    <p> ksh 415</p>
+                    <p> ksh 190</p>
+                    <p> ksh 340</p>
+                  
+                    
+                </div>
+            </div>
+        </div>
+        <!-- </div>
+    <p>monday:</p>
+    <p>rice and beans</p>
+
+    <p>tuesday:</p>
+    <p>githeri</p>
+
+    <p>wednesday:</p>
+    <p>ugali  + eggs</p>
+
+    <p>thursday:</p>
+    <p>rice + maini</p>
+
+    <p>friday:</p>
+    <p>spaggeti + peas + viazi</p>
+
+    <p>satarday:</p>
+    <p>mashed potateos</p>
+
+    <p>sunday:</p>
+    <p>pilau</p>
+
+
+
+        </div> -->

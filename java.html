@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+   /* var i= 1;
+   while ( i < 5 ){
+    document.write ("a statement run");
+    i++;
+   }
+    for (var i=1; i<5; i++) {
+       document.write("a statement  has run") 
+    }
+
+    function batting (player,distance) {
+        if (distance <= 350 && distance>0) {
+        document.write(player + " hit the ball ");}
+else if (distance<=0) { 
+            document.write(player + " struck the ball");
+    }
+        
+
+        else{
+            document.write(player + " missed the ball");
+        }
+        
+    }
+    batting("steve",0);
+
+    function add(x,y){
+        results= x*y;
+        return results;
+    }
+    var theresult = add(6,5)
+    document.write( theresults)
+
+    var name="collins"; // global variable
+    function printName () {
+        
+        name2="sarah"; // local variable
+       
+    }
+    printName(); //call fuction
+    document.write (name2);
+
+
+    var road ="stone"
+    var road2 ="dirt"
+    {}
+    var roads = ["stone" ,"dirt","cement","tar"];
+
+    roads[1] = "dirt";
+
+    var roadtravelled = roads[1];
+
+    (roadtravelled);
+
+    var orc ={hair:"green",
+    age:26,
+    fullstomach:false,
+    
+};
+orc.hair = "purple";
+orc.hair = "1";
+orc.hair2 = "red";
+delete orc.hair;
+document.write(orc.hair);
+    var hello = "hi how r you";
+    
+}hello = hello.Italics();
+document.write(hello);
+var number=Math.sqrt(16);
+var todayDate=new Date();
+todayDate.setYear(17);//var text=document.getElementById("para1").style.backgroundColor="blue"
+document.write(todayDate);*/
+
+function changestyle() {
+
+    
+    var text = document.getElementsByTagName("p"); 
+    var changeParaText = paragraph[0].style.fontstyle = "italic";
+    var changeParaText = paragraph[1].style.fontstyle = "italic";
+    var changeParaText = paragraph[2].style.fontstyle = "italic";
+    var changeParaText = paragraph[3].style.fontstyle = "italic";
+   
+
+}
+
+
+    </script>    
+
+</head>
+<body>
+    <p id="para1">some text for this tutorial</p>
+    <p id="para2">some text for this tutorial</p>
+    <p id="para3">some text for this tutorial</p>
+    <p id="para4">some text for this tutorial</p>
+    
+    <button onclick="changestyle()">hit submit if you wnt to change everything</button>
+</body>
+</html>
